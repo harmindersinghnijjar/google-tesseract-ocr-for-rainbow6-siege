@@ -1,0 +1,160 @@
+{
+  "name": "bartlett",
+  "imgUrlPrefix": "bartlett",
+  "objectives": ["bomb", "hostage", "secure"],
+  "floors": [
+    { "index": 1, "top": -715, "left": -1275, "background": true, "name": "First Floor", "default": true },
+    { "index": 2, "top": -465, "left": -451, "name": "Second Floor" },
+    { "index": 3, "top": -465, "left": -451, "name": "Roof" }
+  ],
+  "hostageObjectives": [
+    { "floor": 1, "top": -96, "left": -296 },
+    { "floor": 1, "top": -199, "left": 643 },
+    { "floor": 2, "top": 265, "left": 336 },
+    { "floor": 2, "top": -171, "left": 577 }
+  ],
+  "bombObjectives": [
+    { "floor": 2, "top": -116, "left": 577, "set": 1, "letter": "A" },
+    { "floor": 2, "top": 92, "left": 596, "set": 1, "letter": "B" },
+    { "floor": 1, "top": 102, "left": 524, "set": 2, "letter": "A" },
+    { "floor": 1, "top": -199, "left": 573, "set": 2, "letter": "B" },
+    { "floor": 1, "top": -63, "left": -255, "set": 3, "letter": "A" },
+    { "floor": 1, "top": 293, "left": -255, "set": 3, "letter": "B" },
+    { "floor": 2, "top": 148, "left": -265, "set": 4, "letter": "A" },
+    { "floor": 2, "top": -18, "left": -298, "set": 4, "letter": "B" }
+  ],
+  "secureObjectives": [
+    { "floor": 1, "top": -172, "left": -353, "otherFloor": "up" },
+    { "floor": 2, "top": -172, "left": -353, "otherFloor": "down" },
+    { "floor": 1, "top": 125, "left": 312 },
+    { "floor": 2, "top": 193, "left": -265 },
+    { "floor": 2, "top": -17, "left": 388 }
+  ],
+  "zoomPoints": {
+    "topLeft": { "top": -426, "left": -389 },
+    "bottomRight": { "top": 330, "left": 731 }
+  },
+  "compassPoints": {
+    "top": 392,
+    "left": 699
+  },
+  "cameras": [
+    {
+      "floor": 2, "top": 175, "left": 67, "id": 1, "location": "Compass Hallway",
+      "los": [
+        [{ "top": 14, "left": 86 }, { "top": -58, "left": 79 }],
+        [{ "top": 16, "left": 27 }, { "top": -38, "left": 9 }],
+        [{ "top": 124, "left": 2 }, { "top": 29, "left": -115 }],
+        [{ "top": 154, "left": -147 }, { "top": 114, "left": -324 }],
+        [{ "top": 178, "left": -147 }, { "top": 172, "left": -324 }]
+      ]
+    },
+    {
+      "floor": 2, "top": -185, "left": 176, "id": 2, "location": "Vista Hallway",
+      "los": [
+        [{ "top": 15, "left": 143 }, { "top": -52, "left": 159 }, { "top": -199, "left": 159 }, { "top": -199, "left": 207 }, { "top": -193, "left": 207 }, { "top": -151, "left": 432 }],
+        [{ "top": -101, "left": 290 }, { "top": -87, "left": 254 }]
+      ]
+    },
+    {
+      "floor": 1, "top": -188, "left": -106, "id": 3, "location": "Archway Hall",
+      "los": [
+        [{ "top": -144, "left": -154 }, { "top": -110, "left": -218 }],
+        [{ "top": -96, "left": -154 }, { "top": -41, "left": -190 }],
+        [{ "top": -43, "left": -11 }, { "top": 81, "left": 72 }],
+        [{ "top": 18, "left": 21 }, { "top": 111, "left": 72 }],
+        [{ "top": -43, "left": 69 }, { "top": 13, "left": 138 }]
+      ]
+    },
+    {
+      "floor": 1, "top": 177, "left": -124, "id": 4, "location": "Lobby",
+      "los": [
+        [{ "top": 111, "left": 22 }, { "top": 55, "left": 71 }],
+        [{ "top": 26, "left": -141 }, { "top": 192, "left": -141 }, { "top": 192, "left": 71 }]
+      ]
+    },
+    {
+      "floor": 1, "top": -400, "left": 356, "id": 5, "location": "Dining Room",
+      "los": [
+        [{ "top": -196, "left": 223 }, { "top": -119, "left": 145 }],
+        [{ "top": -197, "left": 271 }, { "top": -147, "left": 247 }],
+        [{ "top": -142, "left": 194 }, { "top": -81, "left": 145 }]
+      ]
+    },
+    {
+      "outdoor": true, "top": 666, "left": 457, "id": 6, "location": "Main Gate",
+      "los": [[{ "top": 518, "left": 633 }, { "top": 724, "left": 431 }]]
+    },
+    {
+      "outdoor": true, "top": -525, "left": 551, "id": 7, "location": "Parking",
+      "los": [[{ "top": -309, "left": 710 }, { "top": -163, "left": 798 }], [{ "top": -428, "left": 130 }, { "top": -390, "left": 63 }]]
+    }
+  ],
+  "ceilingHatches": [
+    { "floor": 1, "top": 233, "left": -337 },
+    { "floor": 1, "top": 56, "left": -17 },
+    { "floor": 1, "top": 168, "left": 194 },
+    { "floor": 1, "top": 64, "left": 374 },
+    { "floor": 1, "top": -17, "left": 482 },
+    { "floor": 1, "top": 95, "left": 558 },
+    { "floor": 2, "top": -174, "left": 433 }
+  ],
+  "skylights": [
+    { "floor": 1, "top": -319, "left": 272, "otherFloor": "up" },
+    { "floor": 2, "top": -319, "left": 272 },
+    { "floor": 3, "top": -319, "left": 272 }
+  ],
+  "droneTunnels": [
+    { "floor": 1, "top": -274, "left": 137, "rotate": 90, "size": "DRONE_MED" },
+    { "floor": 1, "top": 109, "left": 704, "rotate": 90, "size": "DRONE_MED" },
+    { "floor": 1, "top": 176, "left": 140, "rotate": 90, "size": "DRONE_SMALL" },
+    { "floor": 1, "top": -31, "left": -408, "rotate": 0, "size": 86 },
+    { "floor": 1, "top": -69, "left": -395, "rotate": 90, "size": 34 },
+    { "floor": 2, "top": 1, "left": 267, "rotate": 90, "size": 120 }
+  ],
+  "spawnPoints": [
+    { "letter": "A", "top": 595, "left": -793, "description": "Festival" },
+    { "letter": "B", "top": 646, "left": 320, "description": "Main Gate" },
+    { "letter": "C", "top": -650, "left": -329, "description": "Courtyard" }
+  ],
+  "roomLabels": [
+    { "floor": 1, "top": 186, "left": -261, "description": "Reading Room", "hardToRead": true },
+    { "floor": 1, "top": 9, "left": -254, "description": "Lower Library", "hardToRead": true },
+    { "floor": 2, "top": 9, "left": -254, "description": "Upper Library", "hardToRead": true },
+    { "floor": 1, "top": 143, "left": -5, "description": "Lobby", "hardToRead": true },
+    { "floor": 1, "top": 93, "left": 109, "description": "Coat Room" },
+    { "floor": 1, "top": -123, "left": -1, "description": "Archway Hall", "hardToRead": true },
+    { "floor": 1, "top": -9, "left": -1, "description": "Archway Hall", "hardToRead": true },
+    { "floor": 1, "top": -94, "left": 172, "description": "Central Hallway", "hardToRead": true },
+    { "floor": 1, "top": -160, "left": 298, "description": "Central Hallway", "hardToRead": true },
+    { "floor": 1, "top": -53, "left": 249, "description": "East Stairs", "hardToRead": true },
+    { "floor": 2, "top": -53, "left": 256, "description": "East Stairs", "hardToRead": true },
+    { "floor": 1, "top": -90, "left": 401, "description": "Bathroom" },
+    { "floor": 1, "top": -264, "left": 265, "description": "Dining Room", "hardToRead": true },
+    { "floor": 1, "top": -247, "left": 583, "description": "Kitchen", "hardToRead": true },
+    { "floor": 1, "top": -254, "left": 427, "description": "Service Room", "hardToRead": true },
+    { "floor": 1, "top": -34, "left": 665, "description": "East Corridor" },
+    { "floor": 1, "top": -46, "left": 530, "description": "Pantry" },
+    { "floor": 1, "top": 76, "left": 567, "description": "Piano Room", "hardToRead": true },
+    { "floor": 1, "top": 140, "left": 253, "description": "Lounge", "hardToRead": true },
+    { "floor": 2, "top": -250, "left": 532, "description": "Roof", "hardToRead": true },
+    { "floor": 3, "top": -250, "left": 532, "description": "Roof", "hardToRead": true },
+    { "outdoor": true, "top": 377, "left": -200, "description": "Front Patio", "hardToRead": true },
+    { "outdoor": true, "top": 377, "left": 289, "description": "Front Patio", "hardToRead": true },
+    { "outdoor": true, "top": 619, "left": 36, "description": "Front Entrance", "hardToRead": true },
+    { "outdoor": true, "top": 619, "left": -448, "description": "Festival", "hardToRead": true },
+    { "outdoor": true, "top": -70, "left": -797, "description": "Campus Field", "hardToRead": true },
+    { "outdoor": true, "top": -250, "left": -251, "description": "Terrace" },
+    { "outdoor": true, "top": -310, "left": 69, "description": "Terrace" },
+    { "outdoor": true, "top": -486, "left": -127, "description": "Back Alley", "hardToRead": true },
+    { "outdoor": true, "top": -431, "left": 587, "description": "Parking", "hardToRead": true },
+    { "floor": 1, "top": -204, "left": 754, "description": "Garden Pass" },
+    { "floor": 1, "top": 73, "left": 754, "description": "Garden Pass" },
+    { "floor": 2, "top": -204, "left": 764, "description": "Garden Pass" },
+    { "floor": 2, "top": 73, "left": 764, "description": "Garden Pass" },
+    { "outdoor": true, "top": 298, "left": 655, "description": "Main Gate", "hardToRead": true },
+    { "outdoor": true, "top": 615, "left": 655, "description": "Main Gate", "hardToRead": true },
+    { "outdoor": true, "top": 704, "left": 573, "description": "East Balcony", "hardToRead": true },
+    { "outdoor": true, "top": 704, "left": -349, "description": "West Balcony", "hardToRead": true }
+  ]
+}
