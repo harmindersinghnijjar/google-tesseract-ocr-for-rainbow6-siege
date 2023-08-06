@@ -1,0 +1,178 @@
+coastline: {
+  name: mapNameTerms.coastline,
+  imgUrlPrefix: 'coastline',
+  objectives: [
+    'bomb', 'hostage', 'secure'
+  ],
+  floors: [
+    { index: 1, top: -715, left: -1275, background: true, name: floorTerms.firstFloor, default: true },
+    { index: 2, top: -241, left: -380, name: floorTerms.secondFloor },
+    { index: 3, top: -241, left: -380, name: floorTerms.roof }
+  ],
+  hostageObjectives: [
+    { floor: 2, top: -46, left: 53 },
+    { floor: 2, top: 148, left: 229 },
+    { floor: 1, top: -72, left: 80 },
+    { floor: 1, top: 150, left: -95 }
+  ],
+  bombObjectives: [
+    { floor: 2, top: 45, left: -137, set: 1, letter: objectiveTerms.bombShortB },
+    { floor: 2, top: 203, left: -139, set: 1, letter: objectiveTerms.bombShortA },
+    { floor: 2, top: 14, left: 279, set: 2, letter: objectiveTerms.bombShortB },
+    { floor: 2, top: 148, left: 264, set: 2, letter: objectiveTerms.bombShortA },
+    { floor: 1, top: -63, left: 165, set: 3, letter: objectiveTerms.bombShortB },
+    { floor: 1, top: -18, left: 63, set: 3, letter: objectiveTerms.bombShortA },
+    { floor: 1, top: 181, left: -153, set: 4, letter: objectiveTerms.bombShortA },
+    { floor: 1, top: -24, left: -248, set: 4, letter: objectiveTerms.bombShortB }
+  ],
+  secureObjectives: [
+    { floor: 1, top: 181, left: -189 },
+    { floor: 1, top: -18, left: 15 },
+    { floor: 2, top: 72, left: 229 },
+    { floor: 2, top: 203, left: -194 }
+  ],
+  zoomPoints: {
+    topLeft: { top: -134, left: -317 },
+    bottomRight: { top: 375, left: 332 }
+  },
+  compassPoints: {
+    top: 522, left: 610
+  },
+  cameras: [
+    {
+      floor: 1, top: 95, left: -84, id: 1, location: coastlineTerms.hallway,
+      los: [
+        [{top: 40, left: -30}, {top: -55, left: 41}],
+        [{top: 25, left: -30}, {top: -73, left: 31}],
+        [{top: -92, left: -64}, {top: -33, left: -74}, {top: -33, left: -101}, {top: 108, left: -101}, {top: 108, left: -64}, {top: 98, left: -64}, {top: 67, left: 16}]
+      ]
+    },
+    {
+      floor: 1, top: 292, left: 198, id: 2, location: coastlineTerms.mainLobby,
+      los: [
+        [{top: 149, left: 133}, {top: 288, left: 178}],
+        [{top: 66, left: 154}, {top: 248, left: 177}],
+        [{top: 248, left: 246}, {top: 200, left: 287}],
+        [{top: 306, left: 186}, {top: 306, left: 287}]
+      ]
+    },
+    {
+      floor: 2, top: 316, left: -194, id: 3, location: coastlineTerms.aquarium,
+      los: [
+        [{top: 261, left: -210}, {top: 330, left: -210}, {top: 330, left: -46}, {top: 288, left: -46}, {top: 288, left: -37}, {top: 262, left: 86}],
+        [{top: 275, left: -37}, {top: 262, left: -22}]
+      ]
+    },
+    {
+      floor: 2, top: 77, left: 156, id: 4, location: coastlineTerms.hallway,
+      los: [
+        [{top: 105, left: -46}, {top: 105, left: 110}, {top: 97, left: 120}],
+        [{top: 64, left: -27}, {top: 64, left: 119}],
+        [{top: 347, left: 172}, {top: 64, left: 172}, {top: 64, left: 127}]
+      ]
+    },
+    {
+      outdoor: true, top: -195, left: 415, id: 5, location: coastlineTerms.garageRoof,
+      los: [
+        [{top: -114, left: 436}, {top: -211, left: 436}, {top: -211, left: -342}]
+      ]
+    },
+    {
+      outdoor: true, top: 436, left: -300, id: 6, location: coastlineTerms.ruins,
+      los: [
+        [{top: 485, left: 743}, {top: 454, left: -355}, {top: 276, left: -355}, {top: -115, left: -525}]
+      ]
+    },
+    {
+      outdoor: true, top: -109, left: -551, id: 7, location: coastlineTerms.ruins,
+      los: [
+        [{top: -279, left: -250}, {top: -164, left: -538}, {top: -124, left: -589}, {top: -18, left: -565}],
+        [{top: 485, left: -219}, {top: -43, left: -510}]
+      ]
+    }
+  ],
+  ceilingHatches: [
+    { floor: 1, top: 74, left: -178 },
+    { floor: 1, top: 315, left: -192 },
+    { floor: 1, top: 274, left: 105 },
+    { floor: 1, top: 77, left: 191 },
+    { floor: 2, top: -72, left: 286 }
+  ],
+  skylights: [],
+  droneTunnels: [
+    { floor: 1, top: 63, left: 316, rotate: 0, size: DRONE_SMALL },
+    { floor: 1, top: 258, left: 82, rotate: 0, size: DRONE_SMALL },
+    { floor: 1, top: 226, left: -53, rotate: 0, size: DRONE_SMALL },
+    { floor: 1, top: 215, left: -214, rotate: 90, size: DRONE_SMALL },
+    { floor: 1, top: -81, left: -40, rotate: 90, size: 24 },
+    { floor: 1, top: -90, left: -48, rotate: 0, size: 30 },
+    { floor: 2, top: 223, left: -65, rotate: 0, size: DRONE_SMALL },
+    { floor: 2, top: -4, left: -40, rotate: 90, size: DRONE_SMALL },
+    { floor: 2, top: 94, left: 176, rotate: 90, size: DRONE_SMALL },
+    { floor: 1, top: -86, left: -74, rotate: 0, size: DRONE_MED, otherFloor: 'up' },
+    { floor: 2, top: -86, left: -74, rotate: 0, size: DRONE_MED, otherFloor: 'upanddown' },
+    { floor: 3, top: -86, left: -74, rotate: 0, size: DRONE_MED, otherFloor: 'down' },
+    { floor: 1, top: 334, left: 275, rotate: 0, size: DRONE_MED, otherFloor: 'up' },
+    { floor: 2, top: 334, left: 275, rotate: 0, size: DRONE_MED, otherFloor: 'upanddown' },
+    { floor: 3, top: 334, left: 275, rotate: 0, size: DRONE_MED, otherFloor: 'down' },
+    { floor: 2, top: 235, left: -51, rotate: 0, size: DRONE_MED, otherFloor: 'up' },
+    { floor: 3, top: 235, left: -51, rotate: 0, size: DRONE_MED, otherFloor: 'down' },
+    { floor: 2, top: -81, left: 214, rotate: 0, size: DRONE_MED, otherFloor: 'up' },
+    { floor: 3, top: -81, left: 214, rotate: 0, size: DRONE_MED, otherFloor: 'down' }
+  ],
+  spawnPoints: [
+    { letter: spawnTerms.a, top: 186, left: 814, description: coastlineTerms.mainEntrance.removeBreakTags() },
+    { letter: spawnTerms.b, top: -522, left: -280, description: coastlineTerms.poolSide },
+    { letter: spawnTerms.c, top: 497, left: -525, description: coastlineTerms.ruins }
+  ],
+  roomLabels: [
+    { floor: 1, top: -43, left: 265, description: coastlineTerms.serviceEntrance.removeBreakTags(), hardToRead: true  },
+    { floor: 1, top: -14, left: 166, description: coastlineTerms.serviceEntrance, hardToRead: true },
+    { floor: 1, top: 27, left: 265, description: coastlineTerms.toilets, hardToRead: true  },
+    { floor: 1, top: 141, left: 220, description: coastlineTerms.mainLobby, hardToRead: true  },
+    { floor: 1, top: 333, left: 249, description: coastlineTerms.southStairs, hardToRead: true  },
+    { floor: 2, top: 333, left: 249, description: coastlineTerms.southStairs, hardToRead: true  },
+    { floor: 1, top: 47, left: 44, description: coastlineTerms.kitchen, hardToRead: true },
+    { floor: 1, top: -51, left: 12, description: coastlineTerms.kitchen, hardToRead: true },
+    { floor: 1, top: 97, left: -38, description: coastlineTerms.hallway, hardToRead: true },
+    { floor: 1, top: 319, left: 87, description: coastlineTerms.securityRoom, hardToRead: true },
+    { floor: 1, top: 297, left: 4, description: coastlineTerms.sunRoom, hardToRead: true },
+    { floor: 1, top: 269, left: -151, description: coastlineTerms.office, hardToRead: true },
+    { floor: 1, top: 147, left: -151, description: coastlineTerms.blueBar, hardToRead: true },
+    { floor: 1, top: 32, left: -215, description: coastlineTerms.sunriseBar, hardToRead: true },
+    { floor: 1, top: -76, left: -249, description: coastlineTerms.poolEntrance, hardToRead: true },
+    { floor: 1, top: -46, left: -86, description: coastlineTerms.northStairs, hardToRead: true },
+    { floor: 2, top: -42, left: -59, description: coastlineTerms.northStairs, hardToRead: true },
+    { floor: 2, top: 97, left: -38, description: coastlineTerms.hallway, hardToRead: true },
+    { floor: 2, top: 3, left: -161, description: coastlineTerms.hookahLounge, hardToRead: true },
+    { floor: 2, top: 168, left: -121, description: coastlineTerms.billiardsRoom, hardToRead: true },
+    { floor: 2, top: 295, left: 175, description: coastlineTerms.hallway, hardToRead: true },
+    { floor: 2, top: 292, left: 44, description: coastlineTerms.southHallway, hardToRead: true },
+    { floor: 2, top: 301, left: -121, description: coastlineTerms.aquarium, hardToRead: true },
+    { floor: 2, top: -57, left: 170, description: coastlineTerms.hallOfFame, hardToRead: true },
+    { floor: 2, top: -36, left: 285, description: coastlineTerms.bathroom, hardToRead: true },
+    { floor: 2, top: 27, left: 212, description: coastlineTerms.penthouse, hardToRead: true },
+    { floor: 2, top: 212, left: 230, description: coastlineTerms.theater, hardToRead: true },
+    { floor: 2, top: 1, left: -271, description: coastlineTerms.hookahDeck, hardToRead: true },
+    { floor: 2, top: 36, left: 44, description: coastlineTerms.vipLounge, hardToRead: true },
+    { outdoor: true, top: 167, left: -332, description: coastlineTerms.ruins, hardToRead: true },
+    { floor: 1, top: -122, left: -17, description: coastlineTerms.cantina },
+    { floor: 2, top: -122, left: 237, description: coastlineTerms.djBooth, hardToRead: true },
+    { floor: 2, top: -122, left: -17, description: coastlineTerms.djBooth, hardToRead: true },
+    { outdoor: true, top: -310, left: 189, description: coastlineTerms.pool },
+    { outdoor: true, top: -296, left: -145, description: coastlineTerms.pool },
+    { outdoor: true, top: -15, left: 412, description: coastlineTerms.mainEntrance, hardToRead: true },
+    { outdoor: true, top: 305, left: 412, description: coastlineTerms.mainEntrance, hardToRead: true },
+    { outdoor: true, top: 201, left: 44, description: coastlineTerms.courtyard, hardToRead: true },
+    { outdoor: true, top: 421, left: -121, description: coastlineTerms.terrace },
+    { outdoor: true, top: -387, left: 485, description: coastlineTerms.backAlley },
+    { outdoor: true, top: -575, left: 211, description: coastlineTerms.poolSide },
+    { outdoor: true, top: -166, left: -465, description: coastlineTerms.walkway, hardToRead: true },
+    { floor: 2, top: 370, left: -121, description: coastlineTerms.balcony, hardToRead: true },
+    { outdoor: true, top: -239, left: 445, description: coastlineTerms.garageRoof, hardToRead: true },
+    { outdoor: true, top: 573, left: -211, description: coastlineTerms.southPromenade },
+    { outdoor: true, top: 397, left: 43, description: coastlineTerms.southPromenade },
+    { floor: 3 , top: 111, left: -121, description: coastlineTerms.rooftop, hardToRead: true },
+    { floor: 3 , top: 78, left: 221, description: coastlineTerms.rooftop, hardToRead: true }
+  ]
+},
