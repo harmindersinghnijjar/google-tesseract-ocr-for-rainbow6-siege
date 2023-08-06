@@ -1,0 +1,25 @@
+emptytemplate: {
+  name: 'Empty',
+  imgUrlPrefix: 'empty',
+  objectives: [
+    'bomb', 'hostage', 'secure'
+  ],
+  floors: [],
+  hostageObjectives: [],
+  bombObjectives: [],
+  secureObjectives: [],
+  zoomPoints: {
+    topLeft: {},
+    bottomRight: {}
+  },
+  compassPoints: {
+  },
+  ladders: [
+  ],
+  cameras: [],
+  ceilingHatches: [],
+  skylights: [],
+  droneTunnels: [],
+  spawnPoints: [],
+  roomLabels: []
+},
